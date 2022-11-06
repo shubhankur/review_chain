@@ -70,6 +70,7 @@ App = {
     });
   },
 
+
   getChairperson : function(){
     App.contracts.vote.deployed().then(function(instance) {
       return instance;
@@ -132,6 +133,8 @@ App = {
     });
   },
 
+  
+
   handleWinner : function() {
     console.log("To get winner");
     var voteInstance;
@@ -146,6 +149,7 @@ App = {
     })
   }
 };
+document.getElementById('reviewTemplate').submit();
 
 $(function() {
   $(window).load(function() {
